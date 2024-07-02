@@ -1,4 +1,4 @@
-const ConectarBD= require("./ConexionBD");
+const ConectarBD= require("../../Ejercicio 5/bd/ConexionBD");
 
 class ProductoBD extends ConectarBD{
 constructor(){
