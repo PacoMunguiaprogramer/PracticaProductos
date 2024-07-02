@@ -1,0 +1,32 @@
+*{
+margin: 0;
+padding: 0;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+table{
+    border:3px solid darkcyan;
+    width: 80%;
+    border-spacing: 0px;
+}
+th{
+    background-color: darkcyan;
+    color: white;
+
+}
+td{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid;
+}
+tr:nth-child(odd){/*even filas pares*/   /*odd filas impares */   
+background-color: cadetblue;
+
+}
+.descripcion{
+width: 40%;
+}
+.contenedor{
+display: flex;
+justify-content: center;
+align-items: center;
+}

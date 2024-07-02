@@ -1,0 +1,28 @@
+<%- include("templates/encabezado") %>
+   <h1>Registro de Productos</h1>
+<div class="contenedor">
+   <form action="/editarProducto" method="post" id="formulario"> <!--Cuando queremos enviar archivos usamos enctype="multipart/form-data"-->
+<input value ="<%= idproducto %>"name="idproducto"type="hidden">
+      <label for="nombre">Nombre: </label><span class="ocultar errorNombre">Nombre no valido</span>
+<input value="<%= nombre  %>" autofocus name="nombre" id="nombre" type="text" placeholder="Nombre"/><!--Autofocus se usa para que al abrir la aplicacion ya aparezca sleccionado un input de texto-->
+<i class="ocultar xmarkErrorNombre fa-regular fa-circle-xmark"></i>
+<i class="ocultar checkMarkNombre fa-regular fa-circle-check"></i>
+
+<label for="cantidad">cantidad: </label><span class="ocultar errorCelular">Cantidad no valido</span>
+<input type="text" value="<%= cantidad  %>" name ="cantidad" id="cantidad" placeholder="cantidad">
+<i class="ocultar xmarkErrorCelular fa-regular fa-circle-xmark"></i>
+<i class="ocultar checkMarkCelular fa-regular fa-circle-check"></i>
+
+<label for="precio">Precio: </label><span class="ocultar errorCorreo">Precio no valido</span>
+<input type="text" value="<%= precio  %>" name ="precio" id="precio" placeholder="correo">
+<i class="ocultar xmarkErrorCorreo fa-regular fa-circle-xmark"></i>
+<i class="ocultar checkMarkCorreo fa-regular fa-circle-check"></i>
+
+<label for="precio">Codigo: </label><span class="ocultar errorCorreo">Codigo no valido</span>
+<input type="text" value="<%= codigo  %>" name ="codigo" id="codigo" placeholder="codigo">
+<i class="ocultar xmarkErrorCorreo fa-regular fa-circle-xmark"></i>
+<i class="ocultar checkMarkCorreo fa-regular fa-circle-check"></i>
+<button onclick="Enviar()" id="Enviar" type="submit" >Editar Usuario</button>
+</form> 
+</div>
+<%- include("templates/pie") %>
